@@ -1,0 +1,90 @@
+{
+    "title": "OK",
+    "steps": [
+        {
+            "type": "emulateNetworkConditions",
+            "download": 50000,
+            "upload": 50000,
+            "latency": 2000
+        },
+        {
+            "type": "setViewport",
+            "width": 658,
+            "height": 945,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "chrome-extension://mcohilncbfahbmgdjkbpemcciiolgcge/popup.html#/rpc-mode/evm/coin/detail?address=",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "chrome-extension://mcohilncbfahbmgdjkbpemcciiolgcge/popup.html#/rpc-mode/evm/coin/detail?address=",
+                    "title": "OKX Wallet"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.coin-detail-overview-container div:nth-of-type(1) > div._wallet-icon_e7iqh_1"
+                ],
+                [
+                    "xpath///*[@id=\"app\"]/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]"
+                ],
+                [
+                    "pierce/div.coin-detail-overview-container div:nth-of-type(1) > div._wallet-icon_e7iqh_1"
+                ]
+            ],
+            "offsetY": 34.5,
+            "offsetX": 29
+        },
+        {
+            "type": "change",
+            "target": "main",
+            "selectors": [
+                "aria/Enter wallet address or domain name",
+                "div._rpc-evm-send-edit__inner_3qvkv_1 > div:nth-of-type(1) [data-testid='okd-input']",
+                "xpath///*[@data-testid=\"okd-input\"]",
+                "pierce/div._rpc-evm-send-edit__inner_3qvkv_1 > div:nth-of-type(1) [data-testid='okd-input']"
+            ],
+            "value": "0xeE1B88BC610f1F14DEb435A19A8c157FA5d69D1f"
+        },
+        {
+            "type": "change",
+            "timeout": 5000,
+            "target": "main",
+            "selectors": [
+                "aria/0.000000",
+                "div._rpc-evm-send-edit__inner_3qvkv_1 > div:nth-of-type(2) [data-testid='okd-input']",
+                "xpath///*[@data-testid=\"okd-input\"]",
+                "pierce/div._rpc-evm-send-edit__inner_3qvkv_1 > div:nth-of-type(2) [data-testid='okd-input']"
+            ],
+            "value": "1"
+        },
+        {
+            "type": "click",
+            "timeout": 6000,
+            "target": "main",
+            "selectors": [
+                "aria/Next"
+            ],
+            "offsetX": 164,
+            "offsetY": 10
+        },
+        {
+            "type": "click",
+            "timeout": 6000,
+            "selectors": [
+                "aria/Confirm"
+            ],
+            "offsetX": 164,
+            "offsetY": 10
+        }
+    ]
+}
