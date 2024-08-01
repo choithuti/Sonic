@@ -1,0 +1,81 @@
+{
+    "title": "Sonic Sol",
+    "steps": [
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                "[data-testid='ArrowUpwardIcon']"
+            ],
+            "offsetX": 16.15625,
+            "offsetY": 21.25
+        },
+        {
+            "type": "change",
+            "timeout": 5000,
+            "target": "main",
+            "selectors": [
+                "aria/Enter address"
+            ],
+            "value": "HTSouA2nrkjKpBYi7LQSU4K7Qe14gHsENWRGtBYNPrmt"
+        },
+        {
+            "type": "keyDown",
+            "key": "Enter"
+        },
+        {
+            "type": "click",
+            "timeout": 5000,
+            "target": "main",
+            "selectors": [
+                "aria/Next",
+                "div:nth-of-type(4) > div > div > div.css-175oi2r > div.r-13awgt0 > div:nth-of-type(2) p",
+                "xpath///*[@data-testid=\"Send\"]/p",
+                "text/Next"
+            ],
+            "offsetX": 25.625,
+            "offsetY": 6
+        },
+        {
+            "type": "change",
+            "timeout": 3000,
+            "target": "main",
+            "selectors": [
+                "aria/0"
+            ],
+            "value": "0.01"
+        },
+        {
+            "type": "click",
+            "timeout": 1000,
+            "target": "main",
+            "selectors": [
+                "aria/Review",
+                "div.r-13awgt0 > div > div > div > div.r-13awgt0 > div:nth-of-type(2) [data-testid='Send']",
+                "xpath///*[@data-testid=\"Send\"]",
+                "pierce/div.r-13awgt0 > div > div > div > div.r-13awgt0 > div:nth-of-type(2) [data-testid='Send']"
+            ],
+            "offsetX": 118,
+            "offsetY": 16
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                "text/Approve"
+            ],
+            "offsetX": 73.03125,
+            "offsetY": 14.5
+        },
+        {
+            "type": "click",
+            "timeout": 6000,
+            "target": "main",
+            "selectors": [
+                "text/Done"
+            ],
+            "offsetX": 30.328125,
+            "offsetY": 9.5
+        }
+    ]
+}
